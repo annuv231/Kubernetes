@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-server
+  labels:  # Corrected typo (labels instead of lables)
+    type: server
+    env: production
+spec:
+  containers:
+    - name: nginx-server
+      image: nginx
